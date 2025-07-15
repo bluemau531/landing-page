@@ -1,0 +1,76 @@
+/* Header */
+    /* Header Container */
+    .header-container{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
+
+    /* Header Contents: 'Mauricio' */
+    .header-fullname{
+        font-size: 100px;
+    }
+
+    /* Header Contents: 'About...Connect' */
+    .header-contents{
+        display: flex;
+        justify-content: right;
+        padding-inline: 0px 20px;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+/* Information Section */
+    /* Container for Information Section*/
+    .info-section-container
+    {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 10%;
+        color: white;
+    }
+    /* Text Placeholder: Left */
+    .info-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        /* border: solid black 10px; */
+    }
+
+    /* Image Placeholder */
+    .image-wrapper{
+        display: flex;
+        image-rendering: auto;
+        height: auto;
+        width: 50%;
+        border: solid black 10px; 
+    }
+
+    
+
+
+body{
+    background-color: gray;
+}
+button{
+    align-self: center;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+.light_text{
+    color: white;
+}
+
+
+
+/* *{
+    border: 8px solid red;
+} */
