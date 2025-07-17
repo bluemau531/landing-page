@@ -24,7 +24,7 @@
         /* Header Contents: 'About...Connect' */
         .header-contents{
             display: flex;
-            flex-wrap: wrap;
+            overflow-wrap: wrap;
             justify-content: right;
             padding-inline: 0px 40px;
             gap: 40px;
@@ -58,7 +58,72 @@
             border: solid black 10px; 
         }
 
-    
+/* Body Section */
+    /* Title of Body */
+    .body-title{
+        text-align: center;
+        font-weight: bold;
+        color: black;
+    }
+
+    /* Container for Images in body */
+    .row-images{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* border: #1f2937 solid; */
+    }
+
+        .row-images.text-small{
+            text-align: center;
+            font-style: italic;
+            text-wrap: normal;
+        }
+
+    /* Controls(x,y) Images in Body */
+    img.body-images{
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        border: #1f2937 solid;
+        border-radius: 10%; /* Rounded border */
+    }
+
+/* Quote Section */
+    /* Time Quote */
+    .quote-bg-color{
+        background-color: white;
+        width: 100%;
+        padding: 20px;
+        margin-top: 20px;
+        line-height: 1.6;
+        /* border: #1f2937 solid; */
+    }
+    /* Flex Container */
+    .quote-container{
+        justify-content: center;
+        display: flex;
+    }
+    /* Items */
+    .quote{
+        display: block;
+        max-width: 700px;
+        text-align: center;
+        font-style: italic;
+        font-size: 24px;
+        color: #1f2937;
+        /* border: #1f2937 solid; */
+    }
+    .author{
+        font-weight: bold;
+    }
+
+/* Universal Class */
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Static Classes */
 .text-large{
     font-size: 40px;
 }
@@ -75,12 +140,9 @@
     color: white;
 }
 
-*{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
+/* Element Classes */
 body{
-    background-color: gray;
+    background-color: #4a7bc0;
     margin: 0;
 }
 button{
